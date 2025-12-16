@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>UsBbOmB - Sıkça Sorulan Sorular (SSS)</title>
+    <style>
+        /* CSS: Kırmızı ve Turuncu Tema (GENİŞ ALANLI) - Tutarlı Stil */
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            background-color: #F0F0F0; 
+            color: #000000;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        .main-container {
+            width: 95%;
+            margin: 15px auto;
+            border: 1px solid #CC3300; 
+            background-color: #FFFFFF;
+            padding: 0;
+        }
+        
+        .header-cell {
+            background-color: #FFDDCC;
+            border-bottom: 2px solid #CC3300; 
+            padding: 10px 20px;
+            font-size: 2em;
+            color: #CC3300;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .content-row {
+            display: flex;
+        }
+        
+        /* Sol Menü Alanı */
+        .sidebar {
+            width: 200px;
+            min-height: 400px;
+            padding: 15px;
+            border-right: 1px dashed #AAAAAA; 
+            background-color: #FFFFF0;
+        }
+
+        /* Sağ Ana İçerik Alanı */
+        .content {
+            flex-grow: 1;
+            padding: 15px 20px;
+        }
+        
+        /* Görsel Stili */
+        .explosion-img {
+            display: block;
+            width: 100%; 
+            height: auto;
+            margin-bottom: 15px;
+            border: 2px solid #CC3300;
+        }
+
+        .sidebar-title {
+            color: #CC3300; 
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 5px;
+            border-bottom: 1px solid #FF9900; 
+        }
+        
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+        }
+        
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #0000CC; 
+            display: block;
+            padding: 3px 0;
+        }
+        
+        .sidebar ul li a:hover {
+            background-color: #FFEEAA;
+        }
+        
+        /* Aktif sayfa vurgusu */
+        .sidebar ul li.active a {
+            font-weight: bold;
+            color: #CC3300;
+            background-color: #FFEEAA;
+        }
+
+        .content h2 {
+            color: #CC3300; 
+            font-size: 1.4em;
+            margin-top: 0;
+            border-bottom: 1px solid #FF9900;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        /* Soru ve Cevap Stilleri */
+        .faq-question {
+            font-weight: bold;
+            color: #CC3300;
+            margin-top: 15px;
+            font-size: 1.1em;
+        }
+
+        .faq-answer {
+            background-color: #FFF8E0; /* Hafif Krem/Turuncu Arka Plan */
+            border-left: 3px solid #FF6600; /* Turuncu Çubuk */
+            padding: 10px 15px;
+            margin-bottom: 15px;
+        }
+        
+        .warning-box {
+            border: 2px dashed #FF0000;
+            background-color: #FFFCCC;
+            padding: 10px;
+            margin: 15px 0;
+            font-weight: bold;
+            color: #FF0000;
+        }
+
+        /* Footer */
+        .footer {
+            clear: both;
+            text-align: center;
+            font-size: 0.85em;
+            color: #666666;
+            padding: 10px 0;
+            border-top: 1px solid #CCCCCC;
+            background-color: #F0F0F0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        
+        <div class="header-cell">
+            UsBbOmB - Sıkça Sorulan Sorular (FAQ)
+        </div>
+
+        <div class="content-row">
+            
+            <div class="sidebar">
+                
+                <img src="explosion-boom.png" alt="Patlama İllüstrasyonu - UsBbOmB" class="explosion-img">
+
+                <div class="sidebar-title">NAVIGATION</div>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa (İndir)</a></li>
+                   </ul>
+
+                <div class="sidebar-title">DESTEK</div>
+                <ul>
+                    <li class="active"><a href="#">Sıkça Sorulan Sorular (SSS)</a></li>
+                    <li><a href="#">İletişim</a></li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <h2>UsBbOmB Teknik ve Kullanım Soruları</h2>
+                
+                <p>UsBbOmB, Windows'un yerleşik disk yönetim araçlarını kullanarak disklerinizi bölmeye ve birleştirmeye yarayan hafif bir programdır. Lütfen kullanmadan önce aşağıdaki soruları dikkatlice okuyunuz.</p>
+                
+                <div class="warning-box">
+                    !!! ÖNEMLİ UYARI: UsBbOmB, diskinizdeki **tüm veriyi silerek** işlem yapar (DiskPart "Clean" komutu). Lütfen yedekleme yapmadan kesinlikle kullanmayın. !!!
+                </div>
+
+                <div class="faq-list">
+                    
+                    <div class="faq-question">S: UsBbOmB hangi işletim sistemlerini destekler?</div>
+                    <div class="faq-answer">
+                        C: UsBbOmB, temelinde Windows'un sistem araçlarını (DiskPart, WMIC) kullandığı için yalnızca **Windows 10 ve Windows 11** işletim sistemlerini destekler. Daha eski Windows sürümleri (XP/7/8) veya Linux/MacOS desteklenmez.
+                    </div>
+                    
+                    <div class="faq-question">S: Programı kullanmak için Yönetici yetkisi gerekli midir?</div>
+                    <div class="faq-answer">
+                        C: **Evet, kesinlikle gereklidir.** Disk bölme ve birleştirme işlemleri, işletim sisteminin çekirdek disk yönetim izinlerini gerektirir. Programı çalıştırmadan önce mutlaka **"Yönetici olarak çalıştır"** seçeneğini kullanmalısınız. Aksi takdirde disk taraması veya işlem adımları başarısız olacaktır.
+                    </div>
+                    
+                    <div class="faq-question">S: İşlem sırasında veri kaybı riski var mı?</div>
+                    <div class="faq-answer">
+                        C: **Evet, çok yüksek risk vardır.** Bölme ve birleştirme işlemlerinden önce UsBbOmB, hedef diski tamamen temizlemek için `DiskPart clean` komutunu çalıştırır. Bu, diskin üzerindeki **tüm veriyi, bölümleri ve formatı geri dönülmez bir şekilde siler.** İşlem yapacağınız diskteki tüm önemli verileri yedeklediğinizden emin olun.
+                    </div>
+                    
+                    <div class="faq-question">S: Aynı anda kaç bölüme ayırabilirim?</div>
+                    <div class="faq-answer">
+                        C: UsBbOmB, disk yönetimi için endüstri standardı olan **MBR (Master Boot Record)** kısıtlamalarına uyar ve maksimum **4 birincil (primary) bölüm** oluşturmanıza izin verir.
+                    </div>
+
+                    <div class="faq-question">S: Disklerimi listelerken hata alıyorum. Neden?</div>
+                    <div class="faq-answer">
+                        C: Bunun en yaygın sebebi programın Yönetici yetkisiyle çalışmamasıdır. Diskleri taramak için kullanılan `wmic` komutu, yetki gerektirir. Lütfen programı kapatıp yeniden Yönetici olarak çalıştırın.
+                    </div>
+                    
+                </div>
+                
+                <p style="margin-top: 25px;">Sorunuzun cevabını bulamadınız mı? Lütfen <a href="#">İletişim</a> sayfasından bize ulaşın.</p>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            UsBbOmB &copy; 2004 - Tüm Hakları Saklıdır. | XHTML Uyumlu.
+        </div>
+    </div>
+
+    <script>
+        // SSS sayfasında JavaScript gereksizdir.
+    </script>
+
+</body>
+</html>

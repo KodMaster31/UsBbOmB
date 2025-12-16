@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>UsBbOmB (Kırmızı BOOM)</title>
+    <style>
+        /* Kırmızı ve Turuncu Tema - GENİŞ ALANLI CSS */
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            background-color: #F0F0F0; /* Hafif Gri Arka Plan (Rahatlatıcı) */
+            color: #000000;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh; /* Tüm Sayfayı Kapla */
+        }
+
+        /* Yeni GENİŞ Ana Konteyner */
+        .main-container {
+            width: 95%; /* Genişlik! */
+            margin: 15px auto; /* Ortala */
+            border: 1px solid #CC3300; 
+            background-color: #FFFFFF; /* İçerik Beyaz */
+            padding: 0;
+        }
+        
+        /* Başlık Alanı (Turuncu-Kırmızı Vurgu) */
+        .header-cell {
+            background-color: #FFDDCC; /* Açık Turuncu Zemin */
+            border-bottom: 2px solid #CC3300; 
+            padding: 10px 20px;
+            font-size: 2em;
+            color: #CC3300; /* Koyu Kırmızı Başlık Metni */
+            font-weight: bold;
+            text-align: left;
+        }
+
+        /* Ana İçerik Satırı - Flexbox ile Sütun Yapısı (2004 Hissi İçin Basit Kullanım) */
+        .content-row {
+            display: flex; /* Modern layout, ama kenarlıklar eski usul */
+        }
+        
+        /* Sol Menü Alanı */
+        .sidebar {
+            width: 200px; /* Sabit Geniş Sol Menü */
+            min-height: 400px;
+            padding: 15px;
+            border-right: 1px dashed #AAAAAA; 
+            background-color: #FFFFF0; /* Menüye hafif bir renk */
+        }
+
+        /* Sağ Ana İçerik Alanı */
+        .content {
+            flex-grow: 1; /* Kalan tüm alanı kapla */
+            padding: 15px 20px;
+        }
+        
+        /* Görsel Stili */
+        .explosion-img {
+            display: block;
+            width: 100%; 
+            height: auto;
+            margin-bottom: 15px;
+            border: 2px solid #CC3300; /* Daha belirgin kenarlık */
+        }
+
+        .sidebar-title {
+            color: #CC3300; 
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 5px;
+            border-bottom: 1px solid #FF9900; 
+        }
+        
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+        }
+        
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #0000CC; 
+            display: block;
+            padding: 3px 0;
+        }
+        
+        .sidebar ul li a:hover {
+            background-color: #FFEEAA;
+        }
+
+        .content h2 {
+            color: #CC3300; 
+            font-size: 1.4em;
+            margin-top: 0;
+            border-bottom: 1px solid #FF9900;
+            padding-bottom: 5px;
+        }
+
+        .download-box {
+            border: 1px solid #CC3300; 
+            background-color: #FFF0E0; 
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .download-button {
+            background-color: #FF6600; 
+            color: #FFFFFF;
+            padding: 8px 20px;
+            border: 2px outset #CC3300; /* 2004 tarzı 3D buton efekti */
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.1em;
+        }
+
+        .download-button:active {
+            border: 2px inset #CC3300; /* Tıklayınca içeri göçme efekti */
+        }
+        
+        /* Footer */
+        .footer {
+            clear: both;
+            text-align: center;
+            font-size: 0.85em;
+            color: #666666;
+            padding: 10px 0;
+            border-top: 1px solid #CCCCCC;
+            background-color: #F0F0F0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        
+        <div class="header-cell">
+            UsBbOmB - USB Sürücü Yönetimi Aracı
+        </div>
+
+        <div class="content-row">
+            
+            <div class="sidebar">
+                
+                <img src="explosion-boom.png" alt="Patlama İllüstrasyonu - UsBbOmB" class="explosion-img">
+
+                <div class="sidebar-title">NAVIGATION</div>
+                <ul>
+                    <li><a href="#">Ana Sayfa</a></li>
+                </ul>
+
+                <div class="sidebar-title">DESTEK</div>
+                <ul>
+                    <li><a href="sss.html">Sıkça Sorulan Sorular (SSS)</a></li>
+                    <li><a href="mailto:openchest22@gmail.com">İletişim</a></li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <h2>UsBbOmB v1.0.1 BETA Sürümü İndir</h2>
+                
+                <p>UsBbOmB, USB depolama birimlerinizi benzersiz bir şekilde yönetmek için tasarlanmış basit ve güçlü bir Windows programıdır. Büyük dosyaları, taşıma ve güvenlik amaçlı parçalara ayırarak birden fazla depolama birimine dağıtabilirsiniz.</p>
+
+                <h3>Önemli Özellikler</h3>
+                <ul>
+                    <li>**Genişletilmiş Alan:** Artık daha büyük dosya isimlerini veya uzun metinleri kolayca görebilirsiniz.</li>
+                    <li>USB sürücü parçalama ve birleştirme işlemleri.</li>
+                    <li>Kullanımı kolay, TUİ arayüz</li>
+                    <li>Windows 10\11 uyumlu (64-bit).</li>
+                </ul>
+                
+                <div class="download-box">
+                    <h3>HEMEN İNDİR</h3>
+                    <p><strong>UsBbOmB 1.0.1 BETA Sürümü</strong></p>
+                    <p>
+                        <a href="https://archive.org/download/usbb-om-b/USBbOmB.rar" id="downloadLink" class="download-button">
+                            UsBbOmB 1.0.1 (Windows) İNDİR
+                        </a>
+                    </p>
+                    <p style="font-size: 0.9em; margin-top: 10px;">Dosya: UsBbOmB.rar| Boyut: 48.8 KB | Yayın Tarihi: 2025-12-16</p>
+                </div>
+
+                <h3>Kurulum ve Kullanım</h3>
+                <p>İndirdiğiniz .exe dosyasını çalıştırın. Kurulum gerektirmez, doğrudan çalışır. Programı başlattıktan sonra, parçalamak veya birleştirmek istediğiniz USB sürücüyü seçiniz.</p>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            UsBbOmB &copy;   </div>
+    </div>
+
+    <script>
+        // HATA DÜZELTİLDİ: event.preventDefault(); kaldırıldı, böylece indirme çalışacaktır.
+        document.addEventListener('DOMContentLoaded', function() {
+            var downloadButton = document.getElementById('downloadLink');
+
+            downloadButton.addEventListener('click', function(event) {
+                // event.preventDefault(); KALDIRILDI!
+                
+                // 2004 tarzı uyarı kutusu
+                alert('DİKKAT! UsBbOmB İndirme Başlatılıyor...\n\nLütfen indirme klasörünüzü kontrol edin.');
+                
+                // Bağlantı çalışmaya devam edecektir.
+            });
+        });
+    </script>
+
+</body>
+</html>
